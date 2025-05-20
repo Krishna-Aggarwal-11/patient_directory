@@ -32,8 +32,8 @@ export default function Home() {
   const filteredProjects = data
     .filter((item) => {
       const matchesSearch =
-        item.patient_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        (item.contact?.[0]?.email?.toLowerCase() || "").includes(
+        item.patient_name.toLowerCase().startsWith(searchTerm.toLowerCase()) ||
+        (item.contact?.[0]?.email?.toLowerCase() || "").startsWith(
           searchTerm.toLowerCase()
         );
 
@@ -66,7 +66,7 @@ export default function Home() {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [filteredProjects, searchTerm]);
+  }, [searchTerm, selectedIssues]);
 
   const handleSort = (field: string) => {
     if (sortBy === field) {
