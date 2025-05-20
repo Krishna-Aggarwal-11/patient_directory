@@ -161,7 +161,7 @@ export default function Home() {
                 <h3 className="font-medium text-gray-900">
                   {item.patient_name}
                 </h3>
-                <p className="text-sm text-gray-500">{item.patient_id}</p>
+                <p className="text-sm text-gray-500">ID. - {item.patient_id}</p>
               </div>
             </div>
 
