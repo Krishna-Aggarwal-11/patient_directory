@@ -1,24 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏥 Patient Directory
 
-## Getting Started
+A modern, responsive patient directory management system built with **Next.js** and **React**, designed to help healthcare professionals efficiently search, sort, and filter patient records.
+- Live demo : https://patient-directory.vercel.app/
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- **Comprehensive Patient Records**  
+  Store and display essential patient information, including name, age, gender, and medical conditions.
+
+- **Advanced Search**  
+  Real-time search to quickly find patients by name.
+
+- **Dynamic Sorting**  
+  - Sort by patient name (A–Z / Z–A)  
+  - Sort by patient age (ascending/descending)
+
+- **Medical Issue Filtering**  
+  Easily filter patients by specific medical conditions.
+
+- **Responsive Design**  
+  Works seamlessly across desktops, tablets, and mobile devices.
+
+- **Clean, Intuitive UI**  
+  Modern interface optimized for use in healthcare settings.
+
+---
+
+## 🛠️ Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Krishna-Aggarwal-11/patient_directory
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+## 🏃‍♂️ Running the Development Server
+
+To start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Starts the development server
+- `npm run build` - Builds the app for production
+- `npm run start` - Runs the built app in production mode
+- `npm run lint` - Runs ESLint to check code quality
+
+## 🏗️ Project Structure
+
+```
+mock-data/
+├── src/           # Source files
+├── public/        # Static files
+├── .next/         # Next.js build output
+├── node_modules/  # Dependencies
+└── MOCK_DATA.json # Mock data file
+```
+
+## 🛠️ Built With
+
+- [Next.js](https://nextjs.org/) - The React framework
+- [TypeScript](https://www.typescriptlang.org/) - For type safety
+- [Tailwind CSS](https://tailwindcss.com/) - For styling
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Learn More
 
