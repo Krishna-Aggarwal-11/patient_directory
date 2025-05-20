@@ -33,6 +33,7 @@ A modern, responsive patient directory management system built with **Next.js** 
 1. Clone the repository:
 ```bash
 git clone https://github.com/Krishna-Aggarwal-11/patient_directory
+cd patient_directory
 ```
 
 2. Install dependencies:
